@@ -2,4 +2,17 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^6', -- Recommended
+    lazy = false, -- This plugin is already lazy
+  },
+  {
+    'saecki/crates.nvim',
+    config = function()
+      require('crates').setup()
+    end,
+  },
+  require 'custom.plugins.noutgat_pointy',
+}
