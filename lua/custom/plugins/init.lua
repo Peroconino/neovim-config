@@ -11,8 +11,9 @@ return {
   {
     'saecki/crates.nvim',
     config = function()
-      require('crates').setup()
+      require('crates').setup {}
     end,
   },
+  'mg979/vim-visual-multi',
   require 'custom.plugins.noutgat_pointy',
 }
