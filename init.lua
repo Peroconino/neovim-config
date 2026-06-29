@@ -418,16 +418,20 @@ require('lazy').setup({
             require('telescope.themes').get_dropdown(),
           },
         },
-        file_ignore_patterns = {
-          '^node_modules/',
-          '^.git/',
-          '^target/',
-          '^build/',
-          '^ios/',
-          '^android/',
-          '^resources/',
-          '^.test/',
-          '^dart_tool/',
+        defaults = {
+          file_ignore_patterns = {
+            '^node_modules/',
+            '^.git/',
+            '^target/',
+            '^build/',
+            '^ios/',
+            '^android/',
+            '^resources/',
+            '^.test/',
+            '^dart_tool/',
+            '%.freezed%.dart',
+            '%.g%.dart',
+          },
         },
       }
 

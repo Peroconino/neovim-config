@@ -25,6 +25,7 @@ return {
         hide_by_pattern = {
           -- Add your pattern here:
           '*.g.*',
+          '*.freezed.*',
         },
       },
     },
