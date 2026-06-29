@@ -5,4 +5,5 @@ return {
   require 'custom.plugins.noutgat_pointy',
   require 'custom.plugins.vimtex',
   require 'custom.plugins.vim-visual-multi',
+  require 'custom.plugins.flutter-tools',
 }

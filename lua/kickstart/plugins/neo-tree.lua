@@ -20,6 +20,13 @@ return {
           ['\\'] = 'close_window',
         },
       },
+      filtered_items = {
+        visible = false, -- or true, depending on your preference
+        hide_by_pattern = {
+          -- Add your pattern here:
+          '*.g.*',
+        },
+      },
     },
   },
 }

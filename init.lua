@@ -418,6 +418,17 @@ require('lazy').setup({
             require('telescope.themes').get_dropdown(),
           },
         },
+        file_ignore_patterns = {
+          '^node_modules/',
+          '^.git/',
+          '^target/',
+          '^build/',
+          '^ios/',
+          '^android/',
+          '^resources/',
+          '^.test/',
+          '^dart_tool/',
+        },
       }
 
       -- Enable Telescope extensions if they are installed
@@ -670,7 +681,7 @@ require('lazy').setup({
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
-        clangd = {},
+        -- clangd = {},
         -- rust_analyzer = {},
         -- pyright = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
